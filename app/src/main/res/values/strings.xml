@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">vkpeakncnn</string>
+    <string name="running">"  Running"</string>
     <string-array name="macs_array">
         <item>20</item>
         <item>50</item>

@@ -127,50 +127,62 @@ public class MainActivity extends Activity
                         int cmd_loop = Integer.parseInt(spinnerLoops.getSelectedItem().toString());
 
                         sleep(500);
+                        textviewFP32.post(new Runnable() { public void run() { textviewFP32.setText(R.string.running); } });
                         fp32 = vkpeakncnn.Run(loop, count_mb, cmd_loop, 0, 0, 0);
                         textviewFP32.post(new Runnable() { public void run() { textviewFP32.setText(textHelper(fp32)); } });
 
                         sleep(500);
+                        textviewFP32v4.post(new Runnable() { public void run() { textviewFP32v4.setText(R.string.running); } });
                         fp32v4 = vkpeakncnn.Run(loop, count_mb, cmd_loop, 0, 0, 1);
                         textviewFP32v4.post(new Runnable() { public void run() { textviewFP32v4.setText(textHelper(fp32v4)); } });
 
                         sleep(500);
+                        textviewFP32v8.post(new Runnable() { public void run() { textviewFP32v8.setText(R.string.running); } });
                         fp32v8 = vkpeakncnn.Run(loop, count_mb, cmd_loop, 0, 0, 2);
                         textviewFP32v8.post(new Runnable() { public void run() { textviewFP32v8.setText(textHelper(fp32v8)); } });
 
                         sleep(500);
+                        textviewFP16pv4.post(new Runnable() { public void run() { textviewFP16pv4.setText(R.string.running); } });
                         fp16pv4 = vkpeakncnn.Run(loop, count_mb, cmd_loop, 1, 1, 1);
                         textviewFP16pv4.post(new Runnable() { public void run() { textviewFP16pv4.setText(textHelper(fp16pv4)); } });
 
                         sleep(500);
+                        textviewFP16pv8.post(new Runnable() { public void run() { textviewFP16pv8.setText(R.string.running); } });
                         fp16pv8 = vkpeakncnn.Run(loop, count_mb, cmd_loop, 1, 1, 2);
                         textviewFP16pv8.post(new Runnable() { public void run() { textviewFP16pv8.setText(textHelper(fp16pv8)); } });
 
                         sleep(500);
+                        textviewFP16s.post(new Runnable() { public void run() { textviewFP16s.setText(R.string.running); } });
                         fp16s = vkpeakncnn.Run(loop, count_mb, cmd_loop, 2, 1, 0);
                         textviewFP16s.post(new Runnable() { public void run() { textviewFP16s.setText(textHelper(fp16s)); } });
 
                         sleep(500);
+                        textviewFP16sv4.post(new Runnable() { public void run() { textviewFP16sv4.setText(R.string.running); } });
                         fp16sv4 = vkpeakncnn.Run(loop, count_mb, cmd_loop, 2, 1, 1);
                         textviewFP16sv4.post(new Runnable() { public void run() { textviewFP16sv4.setText(textHelper(fp16sv4)); } });
 
                         sleep(500);
+                        textviewFP16sv8.post(new Runnable() { public void run() { textviewFP16sv8.setText(R.string.running); } });
                         fp16sv8 = vkpeakncnn.Run(loop, count_mb, cmd_loop, 2, 1, 2);
                         textviewFP16sv8.post(new Runnable() { public void run() { textviewFP16sv8.setText(textHelper(fp16sv8)); } });
 
                         sleep(500);
+                        textviewINT32.post(new Runnable() { public void run() { textviewINT32.setText(R.string.running); } });
                         int32 = vkpeakncnn.Run(loop, count_mb, cmd_loop, 3, 2, 0);
                         textviewINT32.post(new Runnable() { public void run() { textviewINT32.setText(textHelper(int32)); } });
 
                         sleep(500);
+                        textviewINT32v4.post(new Runnable() { public void run() { textviewINT32v4.setText(R.string.running); } });
                         int32v4 = vkpeakncnn.Run(loop, count_mb, cmd_loop, 3, 2, 1);
                         textviewINT32v4.post(new Runnable() { public void run() { textviewINT32v4.setText(textHelper(int32v4)); } });
 
                         sleep(500);
+                        textviewINT16.post(new Runnable() { public void run() { textviewINT16.setText(R.string.running); } });
                         int16 = vkpeakncnn.Run(loop, count_mb, cmd_loop, 4, 3, 0);
                         textviewINT16.post(new Runnable() { public void run() { textviewINT16.setText(textHelper(int16)); } });
 
                         sleep(500);
+                        textviewINT16v4.post(new Runnable() { public void run() { textviewINT16v4.setText(R.string.running); } });
                         int16v4 = vkpeakncnn.Run(loop, count_mb, cmd_loop, 4, 3, 1);
                         textviewINT16v4.post(new Runnable() { public void run() { textviewINT16v4.setText(textHelper(int16v4)); } });
 
